@@ -184,6 +184,27 @@
   }
 </style>
 
+
+<style>
+/* --- FINAL mobile overrides (highest priority) --- */
+@media (max-width: 768px) {
+  .hero-text {
+    position: static !important;   /* stack below the image */
+    top: auto !important;
+    left: auto !important;
+    transform: none !important;
+    max-width: 100% !important;
+    padding: 1rem !important;
+    margin-top: 0.5rem !important;
+    background: rgba(0,0,0,0.55) !important;
+    color: #fff !important;
+    box-sizing: border-box !important;
+  }
+  .hero-text h1 { font-size: 1.4rem !important; line-height: 1.4 !important; margin: 0 0 .6rem 0 !important; }
+  .hero-text p  { font-size: 1rem !important;  line-height: 1.7 !important; margin: 0 0 .8rem 0 !important; }
+}
+</style>
+
 </head>
 <body>
 
@@ -195,8 +216,8 @@
     
   </header>
   
-<div style="position: relative; width: 100%; height: auto; max-height: 700px; overflow: hidden; margin-bottom: 2rem;">
-  <img src="ChatGPT Image 2025年8月5日 20_13_46.png" alt="ヒーロー画像" style="width: 100%; height: 100%; object-fit: contain; object-position: top center; filter: brightness(0.8);" />
+<div style="position: relative; width: 100%; margin-bottom: 2rem;">
+  <img src="ChatGPT Image 2025年8月5日 20_13_46.png" alt="ヒーロー画像" style="width: 100%; height: auto; object-fit: cover; object-position: center; filter: brightness(0.8);" />
   <div class="hero-text">
     <h1 style="font-size: 1.8rem; margin-bottom: 1rem;">患者さんの笑顔を一緒につくりませんか？</h1>
     <p style="font-size: 1rem; line-height: 1.7; color: white;">
